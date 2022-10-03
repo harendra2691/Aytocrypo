@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Autocrypo</title>
     <link rel="stylesheet" href="dist/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -154,7 +158,10 @@
               Yearly - 2 Month Free
             </button>
           </div>
-          <ul class="plans-container monthly-container show" id="monthly-container">
+          <ul
+            class="plans-container monthly-container show"
+            id="monthly-container"
+          >
             <li class="plan">
               <h3 class="heading-sm">Starter</h3>
               <p class="amount">$10</p>
@@ -237,9 +244,9 @@
             <h2 class="reviews__title">What<br />Customers Say</h2>
           </div>
         </div>
-        <div class="carousel-container">
-          <ul class="carousel" data-target="carousel">
-            <li data-target="card" class="card">
+        <div class="carousel-container swiper mySwiper">
+          <ul class="carousel swiper-wrapper" data-target="carousel">
+            <li class="card swiper-slide">
               <img src="dist/images/ditto-sm-green.svg" />
               <p class="card-text">
                 "I started driving with Uber because I liked the idea that my
@@ -248,7 +255,7 @@
               </p>
               <p class="card-text">Brandon Roger / <span>OWW Studio</span></p>
             </li>
-            <li data-target="card" class="card">
+            <li class="card swiper-slide">
               <img src="dist/images/ditto-sm-green.svg" />
               <p class="card-text">
                 "I wanted something where I could meet new people and get out of
@@ -257,7 +264,7 @@
               </p>
               <p class="card-text">Sean Walker /<span>OWW Studio</span></p>
             </li>
-            <li data-target="card" class="card">
+            <li class="card swiper-slide">
               <img src="dist/images/ditto-sm-green.svg" />
               <p class="card-text">
                 "Uber enables me to have the creative freedom for baking my
@@ -266,7 +273,7 @@
               </p>
               <p class="card-text">Jenny Harra / <span>OWW Studio</span></p>
             </li>
-            <li data-target="card" class="card">
+            <li class="card swiper-slide">
               <img src="dist/images/ditto-sm-green.svg" />
               <p class="card-text">
                 "I started driving with Uber because I liked the idea that my
@@ -275,7 +282,7 @@
               </p>
               <p class="card-text">Brandon Roger / <span>OWW Studio</span></p>
             </li>
-            <li data-target="card" class="card">
+            <li class="card swiper-slide">
               <img src="dist/images/ditto-sm-green.svg" />
               <p class="card-text">
                 "I wanted something where I could meet new people and get out of
@@ -284,26 +291,18 @@
               </p>
               <p class="card-text">Sean Walker /<span>OWW Studio</span></p>
             </li>
-            <li data-target="card" class="card">
+            <li class="card swiper-slide">
               <img src="dist/images/ditto-sm-green.svg" />
               <p class="card-text">
-                "I started driving with Uber because I liked the idea that my
-                own car could make me money. After just about a couple weeks, I
-                saw that this was something I wanted to do permanently."
+                "I wanted something where I could meet new people and get out of
+                the house. Uber has helped with both of those things, plus I'm
+                seeing new parts of the city I've never seen before!"
               </p>
-              <p class="card-text">Brandon Roger / <span>OWW Studio</span></p>
+              <p class="card-text">Sean Walker /<span>OWW Studio</span></p>
             </li>
           </ul>
-          <div class="button-wrapper">
-            <button data-action="slideLeft" class="btn-prev"><</button>
-            <button data-action="slideRight" class="btn-next">></button>
-          </div>
         </div>
-        <div class="map">
-          <button class="first active"></button>
-          <button class="second"></button>
-          <button class="third"></button>
-        </div>
+        <div class="swiper-pagination"></div>
       </section>
       <section class="platform">
         <div class="container">
@@ -342,6 +341,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="dist/js/index.js"></script>
   </body>
 </html>
